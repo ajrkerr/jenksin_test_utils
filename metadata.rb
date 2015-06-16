@@ -5,5 +5,6 @@ license 'all_rights'
 description 'Installs/Configures jenkins_test_utils'
 long_description 'Installs/Configures jenkins_test_utils'
 version '0.1.0'
+source 'github.com/ajrkerr/jenkins_test_utils'
 
 depends 'jenkins'
