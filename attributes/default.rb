@@ -1,0 +1,1 @@
+default[:jenkins_test_utils][:jobs] = []

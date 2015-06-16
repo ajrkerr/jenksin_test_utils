@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[jenkins_test_utils::default]
+    attributes:
+      jenkins_test_utils:
+        jobs:
+          - test_job_1
+          - test_job_2
